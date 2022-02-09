@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { useState } from 'react';
-import { Form, InputGroup } from 'react-bootstrap';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import React, { useState } from 'react';
+import { Form, InputGroup, FloatingLabel } from 'react-bootstrap';
+import Header from './Header';
 import data from './data.json';
 
 const StyledHeader = styled.header `
@@ -32,15 +32,10 @@ const Button = styled.button`
 function App(props) {
 
   const [toDoList, setToDoList] = useState(data);
-  
+
   return (
     <div className="App">
-      <StyledHeader className="App-header">
-      
-         ToDo
-        
-       
-      </StyledHeader>
+      <Header /> 
 
       <div className="container">
         <Form>
