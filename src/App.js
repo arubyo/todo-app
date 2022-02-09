@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Form, InputGroup } from 'react-bootstrap';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import data from './data.json';
 
 const StyledHeader = styled.header `
   font-size: 3.5em;
