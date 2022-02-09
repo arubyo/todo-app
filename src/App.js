@@ -2,14 +2,9 @@ import styled from 'styled-components';
 import React, { useState } from 'react';
 import { Form, InputGroup, FloatingLabel } from 'react-bootstrap';
 import Header from './Header';
+import ToDoItem from './ToDoItem';
+import ToDoList from './ToDoList';
 import data from './data.json';
-
-const StyledHeader = styled.header `
-  font-size: 3.5em;
-  text-align: center;
-  transform: var(--transform);
-  color: var(--color, palevioletred);
-`;
 
 const Button = styled.button`
   color: papayawhip;
@@ -49,6 +44,8 @@ function App(props) {
           
 
         </Form>
+          <ToDoList toDoList={toDoList}/>
+
 
       </div>
     </div>
