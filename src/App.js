@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 import { Form, InputGroup } from 'react-bootstrap';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import data from './data.json';
@@ -26,7 +27,12 @@ const Button = styled.button`
   `;
 
 
+
+
 function App(props) {
+
+  const [toDoList, setToDoList] = useState(data);
+  
   return (
     <div className="App">
       <StyledHeader className="App-header">
